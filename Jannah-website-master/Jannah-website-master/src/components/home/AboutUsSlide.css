@@ -1,0 +1,37 @@
+.image-container {
+    position: relative;
+    /* align-self:flex-end; */
+    text-align: left;
+  }
+  
+  .overlap-images {
+    position: relative;
+  }
+  
+  .shipment {
+    position: absolute;
+    top: -200px; /* Adjust the value to move it up */
+    left: 300px; /* Adjust the value to move it right */
+    background: transparent;
+    z-index: 2;
+}
+
+.globe {
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+.about-section{
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+.about-content{
+    text-align: left;
+    /* padding-left: 10px; */
+    /* overflow: hidden; */
+}
+  

@@ -1,0 +1,154 @@
+
+  .parallax-hero {
+    height: 100vh;
+    background-image: url('../../assets/hero.png');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden; /* Hide any content that overflows */
+  }
+  
+  .parallax-content {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    background: transparent;
+    /* padding: 0; Remove any padding */
+    /* margin: 0; Remove any margin */
+  }
+  
+  .parallax-content h1 {
+    background: transparent;
+    font-size: 5rem;
+    font-weight: 600;
+    /* font-family:Montserrat; */
+    line-height: 1; /* Adjust line-height as needed */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  @media (max-width: 767px) {
+    .parallax-content {
+      width: 100%; /* Full width on smaller screens */
+      /* position: absolute !important; */
+      padding-left: 10px; 
+      text-align: center; 
+      font-size:smaller;
+      /* justify-content: center; */
+    }
+  
+    .parallax-content h1 {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding-top: 30px;
+    /* height: 100vh; Adjust this as needed */
+  }
+  
+  .card_box {
+    margin-left: 10px;
+    /* margin-bottom: 10px; */
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    /* background: var(--primary-color); */
+    background: white;
+    position: relative;
+    box-shadow: 0  25px 50px var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  }
+  
+  .card-image {
+    
+     width: 100%;
+    height: auto; 
+    overflow: hidden;
+    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom */
+}
+
+.card-image img {
+    /* width: 100%;
+    justify-content: flex-end; 
+    height: auto; */
+    align-self:baseline;
+    object-fit: cover;
+   
+    justify-content: flex-end; 
+
+}
+
+
+.card-title {
+    /* padding: 40px; */
+    color: var(--secondary-color);
+    padding-bottom: 40px;
+    text-transform: capitalize;
+    background:transparent;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+}
+
+.card-title h2 {
+    background: transparent;
+    margin: 0;
+    
+}
+
+
+
+.card_box:hover {
+    transform: scale(1.1);
+}
+.product-grid{
+    background-color: var(--primary-color);
+    padding: 30px;
+    margin-top: 200px;
+    background-blend-mode: soft-light;
+}
+
+.product-grid h1{
+    color: var(--secondary-color);
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+    background: transparent;
+}
+.product-grid p{
+    /* padding-top: 30px ; */
+     background: transparent;
+    color: var(--secondary-color);
+
+ }
+ .section-container {
+    position:relative;
+    margin-top: 200px ; 
+  }
+ 
+  
+  .extra{
+    /* background-color: var(--accent-color); */
+    
+    background-image: url('../../assets/cover.png');;
+  }
+  .extra h1{
+    background: #faebccab;
+    color: var(--secondary-color);
+    font-weight:900;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 0;
+
+  }
